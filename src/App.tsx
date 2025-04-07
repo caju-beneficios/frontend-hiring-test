@@ -1,17 +1,9 @@
-import { useState } from "react";
-
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <>
-      <div>
-        <h1>HR Teste</h1>
-      </div>
-    </>
+    <div data-testid="app-container">
+      <h1>My App</h1>
+    </div>
   );
 }
-
-export default App;

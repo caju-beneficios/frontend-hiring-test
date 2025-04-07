@@ -1,12 +1,11 @@
-import App from "./App";
-import { render, screen } from "@testing-library/react";
-describe("App test", () => {
-  it("should render App title", () => {
+import { render, screen } from '@testing-library/react';
+
+import App from './App';
+
+describe('App', () => {
+  test('renders without crashing', () => {
     render(<App />);
-    expect(
-      screen.getByRole("heading", {
-        name: /hr teste/i,
-      })
-    );
+    const appElement = screen.getByTestId('app-container');
+    expect(appElement).toBeInTheDocument();
   });
 });

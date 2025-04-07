@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "types": [
+            "jest",
+            "node"
+        ],
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src",
+        "jest.setup.ts"
+    ]
+}
